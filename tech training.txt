@@ -1,0 +1,219 @@
+1. SIMPLE INTEREST;
+	
+	            #include <stdio.h>
+
+		  	   int main()
+
+                       {
+                          float principle, time, rate, SI;
+
+  
+                             printf("Enter principle (amount): ");
+                                  
+                                      scanf("%f", &principle)
+
+                                        printf("Enter time: ");
+                      
+                                          scanf("%f", &time);
+ 
+                                         printf("Enter rate: ");
+   
+                                         scanf("%f", &rate);
+
+                               SI = (principle * time * rate) / 100;
+
+                                  printf("Simple Interest = %f", SI);
+
+                                    return 0;
+                             }
+
+
+
+
+
+2. COMPOUND INTESEST;
+														
+											
+					                #include <stdio.h>
+                                    
+                                           #include <math.h>
+
+                                                  int main()
+                                         
+                                                       {
+     
+                                                          float principle, rate, time, CI;
+
+
+                                                      printf("Enter principle (amount): ");
+   
+                                                        scanf("%f", &principle);
+
+                                                         printf("Enter time: ");
+    
+                                                            scanf("%f", &time);
+
+                                                           printf("Enter rate: ");
+    
+                                                          scanf("%f", &rate);
+
+                                                       CI = principle* (pow((1 + rate / 100), time));
+                            
+                                                      printf("Compound Interest = %f", CI);
+
+                                                          return 0;
+                                                   }
+
+
+
+
+
+3. THREE VALUES IN INCREASING ORDER;
+
+	                                 #include <stdio.h>    
+     
+							int main()    
+									{    
+      
+   							 int arr[] = {5, 2, 8, 7, 1};     
+   										            int temp = 0;    
+        
+    
+   												 int length = sizeof(arr)/sizeof(arr[0]);    
+        
+    
+                                                printf("Elements of array sorted in ascending order: \n");    
+ 
+                                                  for (int i = 0; i < length; i++) {     
+       
+                                                   printf("%d ", arr[i]);    
+                                           }    
+                                                 return 0;    
+                                           
+
+                                             }
+
+
+
+
+
+
+
+
+4.FOUR VALUES IN DECREASING ORDER
+
+
+
+    {
+ 
+        int number[30];
+ 
+        int i, j, a, n;
+        printf("Enter the value of N\n");
+        scanf("%d", &n);
+ 
+        printf("Enter the numbers \n");
+        for (i = 0; i < n; ++i)
+	        scanf("%d", &number[i]);
+ 
+        
+ 
+        for (i = 0; i < n; ++i) 
+        {
+            for (j = i + 1; j < n; ++j) 
+            {
+                if (number[i] < number[j]) 
+                {
+                    a = number[i];
+                    number[i] = number[j];
+                    number[j] = a;
+                }
+            }
+        }
+ 
+        printf("The numbers arranged in descending order are given below\n");
+ 
+        for (i = 0; i < n; ++i) 
+        {
+            printf("%d\n", number[i]);
+        }
+ 
+    }
+
+
+
+
+
+5.VOWEL OR NOT
+
+
+                    #include<ctype.h>
+				int main()
+				{
+					char ch;
+					ch=grtc(stdin);
+					if((ch >='a' && ch<='z')||(ch>='A' && ch<='Z'))
+                            {
+                              if(isalpha(ch)) 
+						{
+									switch(ch)
+									{
+										case 'a' : case 'e' : case'i':case 'u':
+									printf("vowel");
+									break;
+										default: printf("consonant");
+											}
+											}
+											else
+												printf("not an alphabet");
+												return 0;
+												}
+
+
+6.REVERSE A NUMBER
+
+				#include<stdio.h>
+					int main()
+					{
+						int n,sum=0;
+						scanf("%d",&n);
+						while(n!=0){
+						sum=sum*10+n%10;
+						n/=10; //n=n/10
+					}
+					printf("%d",sum);
+					return 0;
+				}
+
+
+
+7.	ODD or EVEN;
+
+
+				#include<stdio.h>
+					int main()
+						{
+							int n;
+								printf("enter the numbers")';
+												scanf("%d",&n);
+												if(n%2==0)
+												{
+												printf("the number is even);
+  												}
+												else
+												{
+												printf("the number is odd");
+													}
+												retutn 0;
+												}
+
+
+
+
+
+
+
+
+
+
+     
